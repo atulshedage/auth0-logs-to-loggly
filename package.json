@@ -1,7 +1,7 @@
 {
-  "name": "auth0-logs-to-loggly",
+  "name": "auth0-logs-to-loggly-json",
   "version": "2.0.2",
-  "description": "This extension will take all of your Auth0 logs and export them to Loggly.",
+  "description": "This extension will take all of your Auth0 logs and export them to Loggly in JSON format.",
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run client:build && npm run extension:build",
