@@ -18,7 +18,8 @@ module.exports = (storage) =>
     const loggly = Loggly.createClient({
       token: config('LOGGLY_CUSTOMER_TOKEN'),
       subdomain: config('LOGGLY_SUBDOMAIN') || '-',
-      tags: ['auth0']
+      tags: ['auth0'],
+      json: true
     });
 
     const onLogsReceived = (logs, callback) => {
